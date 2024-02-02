@@ -23,7 +23,7 @@ function App() {
 
   const updateUser = async (id, age) => {
     const userDoc = doc(db, "users", id);
-    const newFields = { age: age + 1 };
+    const newFields = { age: age + 2 };
     await updateDoc(userDoc, newFields);
   };
 
